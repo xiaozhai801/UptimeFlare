@@ -81,16 +81,6 @@ const workerConfig: WorkerConfig = {
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
-    },
-    {
-      id: 'TempMailApi',
-      name: '临时邮箱API',
-      method: 'HEAD',
-      target: 'https://mailapi.zhaizz.top/',
-      statusPageLink: 'https://mailapi.zhaizz.top/',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
     }
   ],
   notification: {
