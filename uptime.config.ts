@@ -91,16 +91,6 @@ const workerConfig: WorkerConfig = {
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
-    },
-    {
-      id: 'proxy',
-      name: '代理',
-      method: 'HEAD',
-      target: 'https://proxy.8000150.xyz/',
-      statusPageLink: 'https://proxy.8000150.xyz/',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
     }
   ],
   notification: {
