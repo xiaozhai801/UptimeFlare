@@ -10,7 +10,7 @@ const pageConfig: PageConfig = {
   title: "宅宅宅的网页状态",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/xiaozhai801', label: 'GitHub' },
+    { link: 'https://github.com/zhaizzH', label: 'GitHub' },
   ],
 }
 
@@ -53,6 +53,16 @@ const workerConfig: WorkerConfig = {
     //   //checkLocationWorkerRoute: 'https://xxx.example.com',
     // },
     {
+      id: 'HomePage',
+      name: '主页',
+      method: 'HEAD',
+      target: 'https://zhaizz.top/',
+      statusPageLink: 'https://zhaizz.top/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
       id: 'Blog',
       name: '博客',
       method: 'HEAD',
@@ -73,11 +83,21 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'TempMail',
-      name: '临时邮箱',
+      id: 'Mail',
+      name: '邮箱',
       method: 'HEAD',
       target: 'https://mail.zhaizz.top/',
       statusPageLink: 'https://mail.zhaizz.top/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
+      id: 'proxy',
+      name: '代理',
+      method: 'HEAD',
+      target: 'https://proxy.8000150.xyz/',
+      statusPageLink: 'https://proxy.8000150.xyz/',
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
