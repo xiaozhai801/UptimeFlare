@@ -91,6 +91,16 @@ const workerConfig: WorkerConfig = {
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
+    },
+    {
+      id: 'IpQuery',
+      name: 'IP 查询',
+      method: 'HEAD',
+      target: 'https://ip.zhaizz.top/',
+      statusPageLink: 'https://ip.zhaizz.top/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
     }
   ],
   notification: {
