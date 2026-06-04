@@ -93,16 +93,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'WebDav',
-      name: 'WebDav',
-      method: 'GET',
-      target: 'https://dav.zhaizz.top/',
-      statusPageLink: 'https://dav.zhaizz.top/',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
-    },
-    {
       id: 'IpQuery',
       name: 'IP 查询',
       method: 'GET',
