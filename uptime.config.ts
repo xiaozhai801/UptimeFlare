@@ -95,7 +95,7 @@ const workerConfig: WorkerConfig = {
     {
       id: 'WebDav',
       name: 'WebDav',
-      method: 'HEAD',
+      method: 'GET',
       target: 'https://dav.zhaizz.top/',
       statusPageLink: 'https://dav.zhaizz.top/',
       hideLatencyChart: false,
