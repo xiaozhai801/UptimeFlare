@@ -101,16 +101,6 @@ const workerConfig: WorkerConfig = {
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
-    },
-    {
-      id: 'tts',
-      name: '语音合成',
-      method: 'HEAD',
-      target: 'https://tts.zhaizz.top/',
-      statusPageLink: 'https://tts.zhaizz.top/',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
     }
   ],
   notification: {
